@@ -17,4 +17,7 @@ class GeoJsonSourceJsImpl {
 
   external GeoJsonSourceJsImpl setData(
       FeatureCollectionJsImpl featureCollection);
+
+  external GeoJsonSourceJsImpl getClusterExpansionZoom(
+      num clusterId, Function callback);
 }

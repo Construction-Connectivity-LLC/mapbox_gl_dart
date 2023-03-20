@@ -539,6 +539,10 @@ class MapboxMap extends Camera {
     return MapboxMap.fromJsObject(jsObject.addSource(id, jsify(source)));
   }
 
+  GeoJsonSource getGeoJsonSource(String id) {
+    return GeoJsonSource.fromJsObject(jsObject.getSource(id));
+  }
+
   ///  Returns a Boolean indicating whether the source is loaded.
   ///
   ///  @param {string} id The ID of the source to be checked.
